@@ -1,0 +1,180 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   box-sizing: border-box;
+   font-size: 62.5%; /* Es una medida para la convercion a REMS - 62.5% = 10px de 16px */
+}
+
+body {
+   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+   font-size: 1.6rem;
+}
+.img-principal img {
+   width: 100%;
+}
+h1 {
+   font-size: 4rem;
+}
+h2 {
+   font-size: 3.6rem;
+}
+h3 {
+   font-size: 3.2rem;
+}
+p {
+   font-size: 2.6rem;
+}
+/* Globales */
+.contenedor {
+   max-width: 120rem;
+   margin: 0 auto;
+}
+/* Header */
+
+@media screen and (min-width: 60rem) and (max-width: 100rem) {
+   .img-header {
+      background-position: center;
+      background-size: cover;
+      height: 100vh;
+   }
+}
+
+.h1 {
+   color: #550b51;
+   text-transform: uppercase;
+   line-height: 1;
+   margin-top: 10px;
+   margin-bottom: 40px;
+   font-size: 40px;
+}
+.img-principal h1 {
+   margin-top: 9rem;
+   text-align: center;
+}
+/* Navegacion */
+header {
+   width: 100%;
+}
+header nav {
+   width: 90%;
+   max-width: 1200px;
+   margin: 20px auto;
+   background-color: #0a8006;
+}
+.menu_bar {
+   display: none;
+}
+header nav ul {
+   overflow: hidden;
+   list-style: none;
+}
+header nav ul li {
+   float: left;
+}
+header nav ul li a {
+   color: #fff;
+   padding: 30px;
+   display: block;
+   text-decoration: none;
+}
+header nav ul li i {
+   margin-right: 10px;
+}
+header nav ul li a:hover {
+   background: #037e8c;
+   border-radius: 10px;
+}
+@media screen and (max-width: 800px) {
+   header nav {
+      width: 60%;
+      height: 45%;
+      left: -100%;
+      margin: 0;
+      position: fixed;
+      transition: 0.3s ease-out;
+   }
+   header nav ul li {
+      display: block;
+      float: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+   }
+   .menu_bar {
+      display: block;
+      width: 100%;
+      background: #ccc;
+   }
+   .menu_bar .btn-menu {
+      display: block;
+      padding: 20px;
+      background-color: #0a8006;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 25px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+   }
+   .menu_bar i {
+      float: right;
+      font-size: 35px;
+   }
+}
+
+/* Section */
+@media (min-width: 768px) {
+   .galeria {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 1rem;
+      height: 280px;
+   }
+   .galeria img {
+      width: 80%;
+      height: 300px;
+   }
+}
+.galeria img {
+   width: 100%;
+   height: 200px;
+}
+.section h2 {
+   margin-top: 5rem;
+   margin-bottom: 50px;
+   text-align: center;
+   font-size: 3rem;
+   text-transform: uppercase;
+   color: #550b51;
+}
+.line {
+   background: #550b51;
+   height: 3px;
+   width: 100%;
+   display: block;
+}
+.btn-section {
+   width: 100%;
+   height: 50px;
+   font-size: 2rem;
+   background-color: #0a8006;
+   color: #fff;
+   margin-bottom: 1rem;
+   border-radius: 1.5rem;
+}
+.far {
+   padding-left: 10px;
+}
+.productos button:hover {
+   background-color: #210680;
+}
+/* Main */
+#title-main {
+   text-align: center;
+   font-size: 36px;
+   color: #550b51;
+   text-transform: uppercase;
+   margin: 40px 0 40px 0;
+}
